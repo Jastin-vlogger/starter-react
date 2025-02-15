@@ -11,10 +11,12 @@
   "devDependencies": {
     "@types/react": "^19.0.8",
     "@types/react-dom": "^19.0.3",
+    "eslint": "^9.20.1",
     "parcel": "^2.13.3",
     "process": "^0.11.10"
   },
   "dependencies": {
+    "prettier": "^3.5.1",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
   },
