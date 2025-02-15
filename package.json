@@ -4,8 +4,7 @@
   "description": "To study react",
   "main": "app.js",
   "scripts": {
-    "test": "jest",
-    "prepare": "husky"
+    "test": "jest"
   },
   "author": "Jastin",
   "license": "ISC",
@@ -13,12 +12,12 @@
     "@types/react": "^19.0.8",
     "@types/react-dom": "^19.0.3",
     "eslint": "^9.20.1",
+    "husky": "^9.1.7",
     "parcel": "^2.13.3",
+    "prettier": "^3.5.1",
     "process": "^0.11.10"
   },
   "dependencies": {
-    "husky": "^9.1.7",
-    "prettier": "^3.5.1",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
   },
