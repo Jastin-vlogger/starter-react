@@ -1,3 +1,4 @@
+import React from "react"
 export const Logo = ({ logo }) => (
     <a href="/">
         <svg xmlns="http://www.w3.org/2000/svg" width="26" height="22" viewBox="0 0 26 22" fill="none">
