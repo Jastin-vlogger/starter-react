@@ -1,5 +1,6 @@
 import { createElement } from 'react';
 import { createRoot } from 'react-dom/client';
+import React from "react";
 
 const heading = createElement( 'h1', {
     key: 'hi'
@@ -12,5 +13,5 @@ const span = React.createElement('span', {
 const divElement = React.createElement('div', {
     key: 'd'
 }, [heading, span]);
-const root = createRoot(document.getElementById('root'));
+const root = createRoot(document.getElementById('root')!);
 root.render(divElement)

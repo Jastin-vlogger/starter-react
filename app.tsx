@@ -1,5 +1,4 @@
 import { createRoot } from 'react-dom/client';
-import { Header } from './components/header/header';
-import React from 'react';
+import { Layout } from './components/layout/layout';
 const root = createRoot(document.getElementById('root')!);
-root.render(<Header />)
+root.render(<Layout />)
