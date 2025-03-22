@@ -1,4 +1,4 @@
-import { IMenuItem } from "../../interfaces/menu-items.interface";
+import { IMenuItem } from "../../../interfaces/menu-items.interface";
 
 export const RestaurantCard = (props: { restaurantList: IMenuItem }) => {
   const { cloudinaryImageId, name, cuisines, areaName } = props.restaurantList.info;
