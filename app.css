@@ -25,6 +25,11 @@ html {
   padding: 1px 10px;
 }
 
+.search-outter-container {
+  display: flex;
+  justify-content: center;
+}
+
 .search-container {
   display: flex;
   align-items: center;
@@ -33,6 +38,7 @@ html {
   border-radius: 25px;
   padding: 5px 10px;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  width: 50%;
 }
 
 .search-container:focus-within {

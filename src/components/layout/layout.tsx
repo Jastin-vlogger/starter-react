@@ -1,13 +1,12 @@
-import { Body } from "./body/body";
-import Footer, { FooterText } from "./footer/footer";
+import { Outlet } from "react-router";
 import { Header } from "./header/header";
+import Footer from "./footer/footer";
 
 export const Layout = () => {
-  
   return (
     <div className="app-container">
       <Header />
-      <Body />
+      <Outlet />
       <Footer />
     </div>
   );
