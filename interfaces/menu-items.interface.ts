@@ -15,6 +15,7 @@ interface Restaurant {
     avgRatingString: string;
     totalRatingsString: string;
     deliveryTime: number;
-    veg?: boolean
+    veg?: boolean;
+    sla?: Record<any, any>
   }
   

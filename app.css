@@ -123,9 +123,15 @@ html {
   text-overflow: ellipsis;
 }
 
-.food-description {
+.food-description { 
   font-size: 0.9rem;
   color: #777;
+  margin-bottom: 10px;
+}
+
+.food-sla {
+  font-size: 0.9rem;
+  color: #079557;
   margin-bottom: 10px;
 }
 
