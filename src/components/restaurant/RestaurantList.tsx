@@ -1,16 +1,9 @@
 import {
-  JSXElementConstructor,
-  ReactElement,
-  ReactNode,
-  ReactPortal,
   useEffect,
-  useState,
+  useState
 } from "react";
-import { IMenuItem } from "../../../interfaces/menu-items.interface";
 import { BYPASSCORS, SWIGGYURL } from "../../utils/constants";
-import { RestaurantCard } from "./RestaurantCard";
-import { Shimmer } from "../shimmer/Shimmer";
-import Heading from "../Heading/Heading";
+import { Shimmer } from "../Shimmer/Shimmer";
 import DynamicCardRenderer from "./DynamicCardRenderer";
 
 

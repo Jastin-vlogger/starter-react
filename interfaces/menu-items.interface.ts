@@ -21,6 +21,10 @@ export interface Restaurant {
 
 export interface InfoItem {
   id: string;
+  imageId: string;
+  accessibility: {
+    altText: string
+  }
 }
 
 export interface GridElements {

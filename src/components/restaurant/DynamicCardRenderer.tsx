@@ -1,11 +1,11 @@
 import React from "react";
-import Heading from "../Heading/Heading";
-import { RestaurantCard } from "./RestaurantCard";
 import {
   DynamicCardRendererProps,
-  InfoItem,
-  Restaurant,
+  InfoItem
 } from "../../../interfaces/menu-items.interface";
+import Heading from "../Heading/Heading";
+import { SWIGGY_CARD_URL } from "../../utils/constants";
+import { RestaurantCard } from "./RestaurantCard";
 
 const DynamicCardRenderer: React.FC<DynamicCardRendererProps> = ({ menu }) => {
   const title = menu?.card?.card?.header?.title;
@@ -15,23 +15,28 @@ const DynamicCardRenderer: React.FC<DynamicCardRendererProps> = ({ menu }) => {
   if (!title && info.length === 0 && restaurants.length === 0) {
     return null;
   }
-  console.log(restaurants);
   return (
     <>
       {title && <Heading level={2}>{title}</Heading>}
 
       {info.length > 0 && (
-        <div className="info-container">
+        <div className="info-container flex space-x-4 overflow-x-auto whitespace-nowrap scrollbar-thin">
           {info.map((cardItem: InfoItem) => (
-            <div key={cardItem.id}>{/* Render info content here */}</div>
+            <div key={cardItem.id} className="image-card-layout">
+              {/* {JSON.stringify(cardItem)} */}
+                <img src={SWIGGY_CARD_URL + cardItem.imageId} width={144} height={180} alt={cardItem.accessibility.altText} />
+            </div>
           ))}
         </div>
       )}
 
       {restaurants.length > 0 && (
-        <div className="food-menu">
+        <div className="grid">
           {restaurants.map((restaurant) => (
-            <RestaurantCard restaurantList={restaurant} />
+            <RestaurantCard
+              key={restaurant?.info.id}
+              restaurantList={restaurant}
+            />
           ))}
         </div>
       )}
