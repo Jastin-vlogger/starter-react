@@ -3,7 +3,7 @@ import { IMenuItem } from "../../../interfaces/menu-items.interface";
 
 export const RestaurantCard = (props: { restaurantList: IMenuItem }) => {
   const { cloudinaryImageId, name, areaName, avgRatingString, sla } =
-    props.restaurantList.info;
+    props?.restaurantList?.info;
   return (
     <div className="food-card">
       <img

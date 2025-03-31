@@ -6,6 +6,11 @@ export default defineConfig({
   server: {
     port: 3000,
   },
+  css: {
+    modules: {
+      scopeBehaviour: "local",
+    },
+  },
   build: {
     outDir: "dist",
   },
