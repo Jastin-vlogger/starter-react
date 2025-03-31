@@ -22,10 +22,10 @@ export const RestaurantList = () => {
   return !restaurantList.length ? (
     <Shimmer />
   ) : (
-    <div className="flex flex-col">
+    <div className="flex flex-col gap-4">
       {restaurantList.length &&
         restaurantList.map((cardItem) => {
-          return <DynamicCardRenderer menu={cardItem}></DynamicCardRenderer>;
+          return <DynamicCardRenderer menu={cardItem} key={cardItem.id}></DynamicCardRenderer>;
         })}
     </div>
   );

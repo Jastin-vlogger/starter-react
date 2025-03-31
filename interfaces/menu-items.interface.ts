@@ -39,6 +39,7 @@ export interface CardData {
     title?: string;
   };
   gridElements?: GridElements;
+  layout: Record<any, any>
 }
 
 export interface MenuProps {

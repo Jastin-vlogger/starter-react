@@ -1,16 +1,14 @@
 import { Link } from "react-router";
 import { IMenuItem } from "../../../interfaces/menu-items.interface";
+import { SWIGGY_RESTAURANT_CARDS_URL } from "../../utils/constants";
 
 export const RestaurantCard = (props: { restaurantList: IMenuItem }) => {
   const { cloudinaryImageId, name, areaName, avgRatingString, sla } =
     props?.restaurantList?.info;
   return (
-    <div className="food-card">
+    <div className="food-card">       
       <img
-        src={
-          "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/" +
-          cloudinaryImageId
-        }
+        src={SWIGGY_RESTAURANT_CARDS_URL + cloudinaryImageId}
         alt={name}
         className="food-image"
       />
