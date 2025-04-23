@@ -30,7 +30,7 @@ const DynamicCardRenderer: React.FC<DynamicCardRendererProps> = ({ menu }) => {
       )}
 
       {info.length > 0 && (
-        <div className="info-container flex space-x-4 whitespace-nowrap">
+        <div className="info-container flex space-x-4 whitespace-nowrap overflow-y-auto">
           {info.map((cardItem: InfoItem) => (
             <div key={cardItem.id} className="image-card-layout">
               {/* {JSON.stringify(cardItem)} */}
