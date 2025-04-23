@@ -1,6 +1,6 @@
 import { createBrowserRouter } from "react-router";
-import { Layout } from "../components/layout/Layout";
-import { Body } from "../components/layout/Body/Body";
+import { Layout } from "../components/Layout/Layout";
+import { Body } from "../components/Layout/Body/Body";
 import Error from "../components/Error/Error";
 import RestaurantDetailsPage from "../components/Restaurant/RestaurantDetailsPage";
 
